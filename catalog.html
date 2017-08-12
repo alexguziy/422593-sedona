@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="main-headar">
+       <img class="main-logo" src="http://placehold.it/138x70" alt="Логотип &quot;Седона&quot;" width="138" height="70">
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="#">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+       <h1 class="visually-hidden">Страница выбора отелей</h1>
+        <section class="search-filter">
+           <h2 class="visually-hidden">Поисковый фильтр</h2>
+           <form action="https://echo.htmlacademy.ru" method="post">
+               <fieldset>
+                   <legend>Инфраструктура:</legend>
+                   <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="pool" checked>
+                            Бассейн
+                        </li>
+                        <li class="filter-option">
+                           <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="parking">
+                            Парковка
+                        </li>
+                        <li class="filter-option">
+                           <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="Wi-Fi">
+                            Wi-Fi
+                        </li>
+                    </ul>
+               </fieldset>
+               <fieldset>
+                   <legend>Тип жилья:</legend>
+                   <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="hotel" checked>
+                            Гостиница
+                        </li>
+                        <li class="filter-option">
+                           <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="motel" checked>
+                            Мотель
+                        </li>
+                        <li class="filter-option">
+                           <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="apartments" checked>
+                            Апартаменты
+                        </li>
+                    </ul>
+               </fieldset>
+               <fieldset>
+                   <legend>Стоимость в сутки (р):</legend>
+                   <input class="visually-hidden filter-input filter-input-text " type="text" name="cost" placeholder="от 0 до 3000">
+               </fieldset>
+               <button type="submit" class="filter-button button">Показать</button>
+           </form>
+        </section>
+
+        <section class="search-line">
+            <h2 class="visually-hidden">Поисковая строка</h2>
+            <p>Найдено:3</p>
+            <ul class="search-line-list">
+                <li class="list-sorting">Сортировка:</li>
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li>
+            </ul>
+        </section>
+
+        <section class="hotel-list">
+           <h2>Amara Resort &amp; Spa</h2>
+           <img src="http://placehold.it/135x90" alt="Гостиница Amara Resort &amp; Spa" width="135" height="90">
+           <ul class="hotel-list-info">
+               <li class="hotel-list-type">Гостиница</li>
+               <li class="hotel-list-cost">От 4000 р.</li>
+           </ul>
+           <a class="button button-detailed" href="#">Подробнее</a>
+           <a class="button button-booking" href="#">Забронировать</a>
+           <p class="list-rating">Рейтинг:8,5</p>
+        </section>
+
+        <section class="hotel-list">
+           <h2>Desert Quail Inn</h2>
+           <img src="http://placehold.it/135x90" alt="Отель Desert Quail Inn" width="135" height="90">
+           <ul class="hotel-list-info">
+               <li class="hotel-list-type">Отель</li>
+               <li class="hotel-list-cost">От 3000 р.</li>
+           </ul>
+           <a class="button button-detailed" href="#">Подробнее</a>
+           <a class="button button-booking" href="#">Забронировать</a>
+           <p class="list-rating">Рейтинг:8,9</p>
+        </section>
+
+        <section class="hotel-list">
+           <h2>Villas at Poco Diablo</h2>
+           <img src="http://placehold.it/135x90" alt="Апартаменты Villas at Poco Diablo" width="135" height="90">
+           <ul class="hotel-list-info">
+               <li class="hotel-list-type">Апартаменты</li>
+               <li class="hotel-list-cost">От 2000 р.</li>
+           </ul>
+           <a class="button button-detailed" href="#">Подробнее</a>
+           <a class="button button-booking" href="#">Забронировать</a>
+           <p class="list-rating">Рейтинг:9,2</p>
+        </section>
+
+    </main>
+   <footer class="main-footer">
+       <span class="footer-info">#visitsedona</span>
+       <div class="footer-social">
+           <ul>
+                <li><a class="cocial-button" href="https://vk.com/">Вконтакте</a></li>
+                <li><a class="cocial-button" href="https://ru-ru.facebook.com">Фейсбук</a></li>
+                <li><a class="cocial-button" href="https://www.youtube.com">Ютуб</a></li>
+           </ul>
+
+       </div>
+
+       <p class="copyright">
+           Website by
+            <a class="copyright-logo" href="https://htmlacademy.ru"><img src="http://placehold.it/115x41" alt="Логотип HTML академии" width="115" height="41"></a>
+       </p>
+   </footer>
+
+  </body>
+</html>

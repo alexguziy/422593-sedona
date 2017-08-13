@@ -27,16 +27,16 @@
                    <legend>Инфраструктура:</legend>
                    <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="pool" checked>
-                            Бассейн
+                            <input class="visually-hidden filter-input filter-input-checkbox " id="pool" type="checkbox" name="pool" checked>
+                            <label for="pool">Бассейн</label>
                         </li>
                         <li class="filter-option">
-                           <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="parking">
-                            Парковка
+                           <input class="visually-hidden filter-input filter-input-checkbox " id="parking" type="checkbox" name="parking">
+                            <label for="parking">Парковка</label>
                         </li>
                         <li class="filter-option">
-                           <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="Wi-Fi">
-                            Wi-Fi
+                           <input class="visually-hidden filter-input filter-input-checkbox " id="Wi-Fi" type="checkbox" name="Wi-Fi">
+                            <label for="Wi-Fi">Wi-Fi</label>
                         </li>
                     </ul>
                </fieldset>
@@ -44,16 +44,16 @@
                    <legend>Тип жилья:</legend>
                    <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="hotel" checked>
-                            Гостиница
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="hotel" type="checkbox" name="hotel" checked>
+                            <label for="hotel">Гостиница</label>
                         </li>
                         <li class="filter-option">
-                           <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="motel" checked>
-                            Мотель
+                           <input class="visually-hidden filter-input filter-input-checkbox" id="motel" type="checkbox" name="motel" checked>
+                            <label for="motel">Мотель</label>
                         </li>
                         <li class="filter-option">
-                           <input class="visually-hidden filter-input filter-input-checkbox " type="checkbox" name="apartments" checked>
-                            Апартаменты
+                           <input class="visually-hidden filter-input filter-input-checkbox" id="apartments" type="checkbox" name="apartments" checked>
+                            <label for="apartments">Апартаменты</label>
                         </li>
                     </ul>
                </fieldset>
@@ -61,7 +61,9 @@
                    <legend>Стоимость в сутки (р):</legend>
                    <input class="visually-hidden filter-input filter-input-text " type="text" name="cost" placeholder="от 0 до 3000">
                </fieldset>
-               <button type="submit" class="filter-button button">Показать</button>
+
+               <input type="submit" name="submit-form" class="filter-button" value="Показать">
+
            </form>
         </section>
 
@@ -121,7 +123,7 @@
                 <li><a class="cocial-link" href="https://ru-ru.facebook.com">Фейсбук</a></li>
                 <li><a class="cocial-link" href="https://www.youtube.com">Ютуб</a></li>
            </ul>
-<input type="button" name="button">
+
        </div>
 
        <p class="copyright">

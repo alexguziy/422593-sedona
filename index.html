@@ -20,16 +20,10 @@
 
     <main class="container">
 
-        <article class="introduction">
-           <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-           <img src="http://placehold.it/1200x780" alt="Ознакомительный баннер Седоны" width="1200" height="780"> <!--Не забыть убрать заглушку".."-->
-        </article>
+           <img src="http://placehold.it/1200x780" alt="Ознакомительный баннер Седоны" width="1200" height="780">
 
-        <article class="advantages">
-           <h2 class="visually-hidden">Основные преимущества Седоны</h2>
-
-           <section class="presentation-features">
-              <h2 class="visually-hidden">Тайна нашей привлекательности</h2>
+            <section class="presentation-features">
+              <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
                <b>Седона — небольшой городок в Аризоне, Заслуживающий большего!</b>
                <p class="presentation-features-item">
                    Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
@@ -117,34 +111,36 @@
                 </ul>
             </section>
 
-        </article>
-
         <section class="booking-proposal">
                 <h2>Заинтересовались?</h2>
                 <p class="booking-proposal-info">
                     Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
                 </p>
-                <a class="button" href="#" name="button">Поиск гостиницы в Седоне</a>
+
+                <input type="button" name="button" value="Поиск гостиницы в Седоне">
         </section>
-        <!--Пересмотреть форму!!! Валидатор ругается на "date" "number"-->
-        <section class="modal modal-form">
+
+        <section class="modal">
            <h2 class="visually-hidden">Форма бронирования</h2>
-            <p class="modal-form date arrival ">
-                Дата заезда:
+           <form class="modal"  action="#" method="post">
+            <p class="modal date arrival ">
+                <label for="date">Дата заезда:</label>
                 <input type="text" name="date" placeholder="24 апреля 2017">
             </p>
-            <p class="modal-form date departure">
-                Дата выезда:
-                <input type="text" name="date" placeholder="4 июля 2017">
+            <p class="modal date departure">
+                <label for="date">Дата выезда:</label>
+                <input type="text" name="date" id="date" placeholder="4 июля 2017">
             </p>
-            <p class="modal-form grown">
-                Взрослые:
-                <input type="text" name="number" placeholder="2">
+            <p class="modal grown">
+               <label for="number-grown">Взрослые:</label>
+                <input type="button" name="push-minus" value="-"><input type="text" name="number-grown" id="number-grown" placeholder="2"><input type="button" name="push-plus"  value="+">
             </p>
-            <p class="modal-form children">
-                Дети:
-                <input type="text" name="number" placeholder="0">
+            <p class="modal children">
+               <label for="number-children">Дети:</label>
+                <input type="button" name="push-minus"  value="-"><input type="text" name="number-children" id="number-children" placeholder="0"><input type="button" name="push-plus"  value="+">
             </p>
+            <button class="search-button" type="submit">Найти</button>
+            </form>
         </section>
 
         <section class="search-map">
@@ -155,13 +151,12 @@
     </main>
    <footer class="main-footer">
        <span class="footer-info">#visitsedona</span>
-       <div class="footer-social">
-           <ul>
-                <li><a class="cocial-button" href="https://vk.com/">Вконтакте</a></li>
-                <li><a class="cocial-button" href="https://ru-ru.facebook.com">Фейсбук</a></li>
-                <li><a class="cocial-button" href="https://www.youtube.com">Ютуб</a></li>
+       <div>
+           <ul class="footer-social">
+                <li><a class="cocial-link" href="https://vk.com/">Вконтакте</a></li>
+                <li><a class="cocial-link" href="https://ru-ru.facebook.com">Фейсбук</a></li>
+                <li><a class="cocial-link" href="https://www.youtube.com">Ютуб</a></li>
            </ul>
-
        </div>
 
        <p class="copyright">

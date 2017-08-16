@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link href="/css/style_cataloc.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
     </head>
     <body>
 
@@ -20,23 +20,23 @@
         </header>
 
         <main class="container">
-            <h1 class="visually-hidden">Страница выбора отелей</h1>
+            <h1 class="title-main visuallyhidden">Страница выбора отелей</h1>
             <section class="search-filter">
-                <h2 class="visually-hidden">Поисковый фильтр</h2>
+                <h2 class="title visuallyhidden">Поисковый фильтр</h2>
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <fieldset>
                         <legend>Инфраструктура:</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox " id="pool" type="checkbox" name="pool" checked>
+                                <input class="visuallyhidden filter-input filter-input-checkbox " id="pool" type="checkbox" name="pool" checked>
                                 <label for="pool">Бассейн</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox " id="parking" type="checkbox"     name="parking">
+                                <input class="visuallyhidden filter-input filter-input-checkbox " id="parking" type="checkbox"     name="parking">
                                 <label for="parking">Парковка</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox " id="Wi-Fi" type="checkbox" name="Wi-Fi">
+                                <input class="visuallyhidden filter-input filter-input-checkbox " id="Wi-Fi" type="checkbox" name="Wi-Fi">
                                 <label for="Wi-Fi">Wi-Fi</label>
                             </li>
                         </ul>
@@ -45,29 +45,29 @@
                         <legend>Тип жилья:</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" id="hotel" type="checkbox" name="hotel" checked>
+                                <input class="visuallyhidden filter-input filter-input-checkbox" id="hotel" type="checkbox" name="hotel" checked>
                                 <label for="hotel">Гостиница</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" id="motel" type="checkbox" name="motel" checked>
+                                <input class="visuallyhidden filter-input filter-input-checkbox" id="motel" type="checkbox" name="motel" checked>
                                 <label for="motel">Мотель</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-checkbox" id="apartments" type="checkbox" name="apartments" checked>
+                                <input class="visuallyhidden filter-input filter-input-checkbox" id="apartments" type="checkbox" name="apartments" checked>
                                 <label for="apartments">Апартаменты</label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Стоимость в сутки (р):</legend>
-                        <input class="visually-hidden filter-input filter-input-text " type="text" name="cost" placeholder="от 0 до 3000">
+                        <input class="visuallyhidden filter-input filter-input-text " type="text" name="cost" placeholder="от 0 до 3000">
                     </fieldset>
                     <input type="submit" name="submit-form" class="filter-button" value="Показать">
                 </form>
             </section>
 
             <section class="search-line">
-                <h2 class="visually-hidden">Поисковая строка</h2>
+                <h2 class="title visuallyhidden">Поисковая строка</h2>
                 <p>Найдено:3</p>
                 <ul class="search-line-list">
                     <li class="list-sorting">Сортировка:</li>
@@ -78,7 +78,7 @@
             </section>
 
             <section class="hotel-list">
-                <h2>Amara Resort &amp; Spa</h2>
+                <h2 class="title-hotel-list">Amara Resort &amp; Spa</h2>
                 <img src="/img/Amara_resort.jpg" alt="Гостиница Amara Resort &amp; Spa" width="135" height="90">
                 <ul class="hotel-list-info">
                     <li class="hotel-list-type">Гостиница</li>
@@ -90,7 +90,7 @@
             </section>
 
             <section class="hotel-list">
-                <h2>Desert Quail Inn</h2>
+                <h2 class="title-hotel-list">Desert Quail Inn</h2>
                 <img src="/img/desert%20quail.jpg" alt="Отель Desert Quail Inn" width="135" height="90">
                 <ul class="hotel-list-info">
                     <li class="hotel-list-type">Отель</li>
@@ -102,7 +102,7 @@
             </section>
 
             <section class="hotel-list">
-                <h2>Villas at Poco Diablo</h2>
+                <h2 class="title-hotel-list">Villas at Poco Diablo</h2>
                 <img src="/img/villas.jpg" alt="Апартаменты Villas at Poco Diablo" width="135" height="90">
                 <ul class="hotel-list-info">
                     <li class="hotel-list-type">Апартаменты</li>

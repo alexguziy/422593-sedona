@@ -1,5 +1,5 @@
 body {
-    font-family: "PTSans", serifsans-serif;
+    font-family: "PTSans", sans-serif;
     font-size: 14px;
     color: #333333;
     font-weight: normal;
@@ -7,8 +7,8 @@ body {
     line-height: 21px;
 }
 
-h1.visually-hidden {
-    font-family: "PTSans", serifsans-serif;
+.title-main {
+    font-family: "PTSans", sans-serif;
     font-size: 30px;
     color: #333333;
     font-weight: bold;
@@ -16,8 +16,8 @@ h1.visually-hidden {
     line-height: 33px;
 }
 
-h2 {
-    font-family: "PTSans", serifsans-serif;
+.title {
+    font-family: "PTSans", sans-serif;
     font-size: 21px;
     color: #333333;
     font-weight: bold;
@@ -25,11 +25,31 @@ h2 {
     line-height: 21px;
 }
 
-.presentation-features b {
-    font-family: "PTSans", serifsans-serif;
+.presentation-features-title {
+    font-family: "PTSans", sans-serif;
     font-size: 21px;
     color: #333333;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 26px;
 }
+
+.title-booking {
+    font-family: "PTSans", sans-serif;
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.title-hotel-list {
+    font-family: "PTSans", sans-serif;
+    font-size: 21px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+
+

@@ -1,55 +1,137 @@
 body {
-    font-family: "PTSans", sans-serif;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
-    color: #333333;
     font-weight: normal;
-    text-transform: uppercase;
     line-height: 21px;
+    font-family: "PTSans", "Arial", sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    background-color: #ffffff;
 }
 
-.title-main {
-    font-family: "PTSans", sans-serif;
-    font-size: 30px;
-    color: #333333;
+a {
+    text-decoration: none;
+}
+
+
+.main-navigation {
+    font-size: 14px;
     font-weight: bold;
-    text-transform: uppercase;
-    line-height: 33px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.main-navigation li {
+    list-style: none;
+}
+
+.main-navigation a:link {
+    color: #000000;
+}
+.main-navigation a:visited {
+    color: #766357;
+}
+
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+.main-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .title {
-    font-family: "PTSans", sans-serif;
     font-size: 21px;
-    color: #333333;
     font-weight: bold;
-    text-transform: uppercase;
     line-height: 21px;
-}
-
-.presentation-features-title {
-    font-family: "PTSans", sans-serif;
-    font-size: 21px;
-    color: #333333;
-    font-weight: bold;
+    text-align: center;
+    color: #000000;
     text-transform: uppercase;
-    line-height: 26px;
+
+
+
+
 }
 
-.title-booking {
-    font-family: "PTSans", sans-serif;
+.title-main {
     font-size: 30px;
-    color: #333333;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 36px;
+    text-align: center;
+    line-height: 33px;
 }
 
 .title-hotel-list {
-    font-family: "PTSans", sans-serif;
     font-size: 21px;
-    color: #333333;
     font-weight: bold;
-    text-transform: uppercase;
     line-height: 26px;
+
+
+
 }
 
+.title-booking {
+    font-size: 30px;
+    line-height: 36px;
+}
 
+.main-idea {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+.presentation-features-item {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.features-first .title,
+.features-second .title,
+.features-first p,
+.features-second p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.features-first,
+.features-second {
+    background-color: #81b3d2;
+}
+
+.features-priority-item p,
+.features-end-list {
+    text-align: center;
+}
+
+.features-priority-list li,
+.features-end-list li {
+    list-style: none;
+}
+
+.features-end-list {
+    background-color: #eeeeee;
+}
+
+.booking-proposal-info {
+    line-height: 24px;
+    text-align: center;
+}
+
+.search a:link {
+    font-size: 21px;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: red;
+}
+
+.search a:hover {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:aqua;
+}

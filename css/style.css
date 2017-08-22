@@ -2,9 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    font-weight: normal;
     line-height: 21px;
-    font-family: "PTSans", "Arial", sans-serif;
+    font-weight: normal;
+    font-family: "PTSans", Arial, sans-serif;
     color: #333333;
     text-transform: uppercase;
     background-color: #ffffff;
@@ -14,11 +14,10 @@ a {
     text-decoration: none;
 }
 
-
 .main-navigation {
     font-size: 14px;
-    font-weight: bold;
     line-height: 26px;
+    font-weight: bold;
     color: #000000;
     background-color: #ffffff;
 }
@@ -43,30 +42,23 @@ a {
 
 .title {
     font-size: 21px;
-    font-weight: bold;
     line-height: 21px;
+    font-weight: bold;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
-
-
-
-
 }
 
 .title-main {
     font-size: 30px;
-    text-align: center;
     line-height: 33px;
+    text-align: center;
 }
 
 .title-hotel-list {
     font-size: 21px;
-    font-weight: bold;
     line-height: 26px;
-
-
-
+    font-weight: bold;
 }
 
 .title-booking {
@@ -76,24 +68,21 @@ a {
 
 .main-idea {
     font-size: 21px;
-    font-weight: bold;
     line-height: 26px;
+    font-weight: bold;
     text-align: center;
-
 }
 
 .presentation-features-item {
     font-size: 14px;
-    font-weight: normal;
     line-height: 26px;
+    font-weight: normal;
     text-align: center;
     color: #333333;
 }
 
-.features-first .title,
-.features-second .title,
-.features-first p,
-.features-second p {
+.container-features,
+.container-features .title {
     color: #ffffff;
     text-align: center;
 }
@@ -103,9 +92,13 @@ a {
     background-color: #81b3d2;
 }
 
-.features-priority-item p,
+.features-priority-list {
+    text-align: center;
+}
+
 .features-end-list {
     text-align: center;
+    background-color: #eeeeee;
 }
 
 .features-priority-list li,
@@ -113,25 +106,114 @@ a {
     list-style: none;
 }
 
-.features-end-list {
-    background-color: #eeeeee;
-}
+
 
 .booking-proposal-info {
     line-height: 24px;
     text-align: center;
 }
 
-.search a:link {
-    font-size: 21px;
-    font-weight: normal;
-    color: #ffffff;
-    background-color: red;
+.booking-proposal {
+    text-align: center;
 }
 
-.search a:hover {
+.booking-proposal a:link,
+.search-button {
     font-size: 21px;
+    line-height: 26px;
     font-weight: bold;
+    text-align: center;
     color: #ffffff;
-    background-color:aqua;
+    background-color: #766357;
+    vertical-align: middle;
 }
+
+.booking-proposal a:hover {
+    background-color: #604e43;
+}
+
+.booking-proposal a:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
+}
+
+.modal p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+.modal input {
+    font: inherit;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.modal input:hover {
+     background-color: #ebebeb;
+}
+
+.modal input:focus {
+    background-color: transparent;
+    border: 2px solid #e5e5e5; outline: none;
+}
+
+.grown input,
+.children input {
+    font-size: 21px;
+    line-height: 26px;
+    color: #a9a9a9;
+}
+
+.grown input:hover,
+.children input:hover {
+    color: #000000;
+}
+
+.grown input:focus,
+.children input:focus {
+    border:none;
+     background-color: #f2f2f2;
+}
+
+.grown input:active,
+.children input:active {
+    color: #81b3d2;
+}
+
+.search-button:link {
+    background-color: #81b3d2;
+}
+
+.search-button:focus {
+     border:none; outline: none;
+}
+
+.search-button:hover {
+    background-color: #669ec0;
+}
+
+.search-button:active {
+    color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+.footer-info {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.main-footer p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #000000;
+}
+

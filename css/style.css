@@ -150,8 +150,7 @@ a {
 
 .modal input:focus {
     background-color: transparent;
-    xoutline: none; /* аутлайн ее закрывает*/
-    border: 2px solid #e5e5e5;/* в фокусе будет работать эта рамка*/
+    border: 2px solid #e5e5e5;
 }
 
 .grown input,

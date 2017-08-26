@@ -1,4 +1,6 @@
 body {
+    width: 1280px;
+    min-height: 2762px;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -14,30 +16,109 @@ a {
     text-decoration: none;
 }
 
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.main-headar {
+    width: 1200px;
+    min-height: 71px;
+    margin-left: 40px;
+    outline: 2px solid red;
+}
+
 .main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 71px;
+    outline: 2px solid orange;
+}
+
+.main-logo {
+    order: 1;
+    outline: 2px solid blue;
+    z-index: 1;
+}
+
+.sait-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    min-height: 17px;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
     color: #000000;
     background-color: #ffffff;
+    outline: 2px solid brown;
 }
 
-.main-navigation li {
+.navigation-left {
+    margin-left: 73px;
+}
+.navigation-right {
+    order: 2;
+    margin-right: 73px;
+}
+
+.sait-navigation li {
     list-style: none;
 }
 
-.main-navigation a:link {
+.sait-navigation a:link {
     color: #000000;
 }
-.main-navigation a:visited {
+.sait-navigation a:visited {
     color: #766357;
 }
 
-.main-navigation a:hover {
+.sait-navigation a:hover {
     color: #81b3d2;
 }
-.main-navigation a:active {
+.sait-navigation a:active {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 1200px;
+    margin-left: 40px;
+}
+
+.banner {
+    margin-top: -15px;
+    margin-bottom: 61px;
+}
+
+.presentation-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    min-height: 99px;
+    margin-bottom: 55px;
+    outline: 2px solid red;
+}
+
+.main-idea {
+    width: 576px;
+    min-height: 50px;
+    margin-bottom: 34px;
+    outline: 2px solid blue;
+}
+
+.presentation-features-item {
+    width: 576px;
+    min-height: 16px;
+    outline: 2px solid orange;
 }
 
 .title {

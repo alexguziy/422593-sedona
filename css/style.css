@@ -1,5 +1,5 @@
 body {
-    width: 1280px;
+    min-width: 1280px;
     min-height: 2762px;
     margin: 0;
     padding: 0;
@@ -28,30 +28,37 @@ a {
 }
 .main-headar {
     width: 1200px;
-    min-height: 71px;
+    min-height: 55px;
+    position: relative;
     margin-left: 40px;
     outline: 2px solid red;
 }
 
 .main-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 71px;
     outline: 2px solid orange;
 }
 
 .main-logo {
-    order: 1;
+    position: absolute;
+    left: 535px;
     outline: 2px solid blue;
     z-index: 1;
+}
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    min-width: 1056px;
+    padding-left: 73px;
+    padding-right: 73px;
+    outline: 2px solid green;
 }
 
 .sait-navigation {
     display: flex;
     justify-content: space-between;
-    width: 340px;
-    min-height: 17px;
+    align-items: center;
+    min-height: 55px;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -63,13 +70,12 @@ a {
 }
 
 .navigation-left {
-    margin-left: 73px;
-}
-.navigation-right {
-    order: 2;
-    margin-right: 73px;
+    min-width: 340px;
 }
 
+.navigation-right {
+    min-width: 340px;
+}
 .sait-navigation li {
     list-style: none;
 }
@@ -94,31 +100,20 @@ a {
 }
 
 .banner {
-    margin-top: -15px;
-    margin-bottom: 61px;
-}
-
-.presentation-features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 1200px;
-    min-height: 99px;
-    margin-bottom: 55px;
-    outline: 2px solid red;
+    min-height: 508px;
+    margin-top: 0;
+    margin-bottom: 61px;
+    background-color: #263138;
+    background: url("../img/background-line.png"), url("../img/Background-banner.jpg");
+    background-size: 1200px 57px, 1200px 508px;
+    background-repeat: no-repeat;
+    background-position:  left 0  top 452px, left 0 top 0;
 }
 
-.main-idea {
-    width: 576px;
-    min-height: 50px;
-    margin-bottom: 34px;
-    outline: 2px solid blue;
-}
-
-.presentation-features-item {
-    width: 576px;
-    min-height: 16px;
-    outline: 2px solid orange;
+.banner-welcome {
+    margin-top: 46px;
+    margin-left: 375px;
 }
 
 .title {
@@ -128,6 +123,8 @@ a {
     text-align: center;
     color: #000000;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .title-main {
@@ -136,12 +133,22 @@ a {
     text-align: center;
 }
 
-.title-booking {
-    font-size: 30px;
-    line-height: 36px;
+.presentation-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1200px;
+    min-height: 99px;
+    margin-bottom: 55px;
+    outline: 2px solid red;
 }
 
 .main-idea {
+    width: 576px;
+    min-height: 50px;
+    margin-top: 0px;
+    margin-bottom: 34px;
+    outline: 2px solid blue;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -149,6 +156,10 @@ a {
 }
 
 .presentation-features-item {
+    width: 576px;
+    min-height: 16px;
+    margin-bottom: 0px;
+    outline: 2px solid orange;
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
@@ -164,24 +175,74 @@ a {
 
 .features-first,
 .features-second {
+    display: flex;
+    min-width: 1200px;
     background-color: #81b3d2;
 }
 
+.container-features {
+    width: 400px;
+    min-height: 256px;
+    outline: 2px solid red;
+}
+
 .features-priority-list {
+    display: flex;
+    min-width: 1200px;
+    padding: 0;
+    margin: 0;
     text-align: center;
-}
-
-.features-end-list {
-    text-align: center;
-    background-color: #eeeeee;
-}
-
-.features-priority-list li,
-.features-end-list li {
     list-style: none;
 }
 
+.features-priority-item {
+    min-width: 400px;
+    min-height: 328px;
+    padding-top: 58px;
+    outline: 2px solid orange;
+}
 
+.features-priority-sprite {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto;
+    outline: 2px solid blue;
+}
+.features-priority-item .title {
+    margin-top: 30px;
+}
+
+.features-priority-item p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.features-end-list {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+    background-color: #eeeeee;
+    outline: 2px solid red;
+}
+
+.features-end-item {
+    width: 400px;
+    min-height: 250px;
+    outline: 2px solid blue;
+}
+
+.booking-proposal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    min-width: 1200px;
+    min-height: 292px;
+    position: relative;
+    outline: 2px solid orange;
+}
 
 .booking-proposal-info {
     line-height: 24px;
@@ -212,12 +273,22 @@ a {
     background-color: #503e33;
 }
 
+.modal-sech {
+    position: absolute;
+    top: 292px;
+    z-index: 1;
+    padding: 0;
+    width: 568px;
+    min-height: 396px;
+    outline: 2px solid orange;
+}
+
 .modal p {
+    margin-top: 0px;
     font-size: 14px;
     font-weight: 600;
     color: #000000;
 }
-
 
 .modal input {
     font: inherit;
@@ -274,6 +345,57 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.main-footer {
+    position: relative;
+    width: 1200px;
+    min-height: 593px;
+    margin-left: 40px;
+    outline: 2px solid red;
+
+}
+
+.main-footer-info {
+    display: flex;
+    width: 1200px;
+    position: absolute;
+    bottom: 0px;
+    min-height: 122px;
+    background-color: rgba(249, 251, 246, 0.9);
+    background-position: top;
+    outline: 2px solid red;
+
+}
+
+.main-footer-info-container {
+    display: flex;
+    align-items: center;
+    width: 1056px;
+    min-height: 136px;
+    margin-left: 73px;
+    margin-right: 73px;
+    outline: 2px solid orange;
+}
+
+.footer-info {
+    width: 152px;
+    margin: 0;
+    margin-right: 255px;
+    outline: 2px solid orange;
+}
+
+.footer-social {
+    margin: 0;
+    padding: 0;
+    width: 156px;
+    outline: 2px solid orange;
+}
+
+.copyright {
+    width: 230px;
+    margin-left: auto;
+    outline: 2px solid orange;
+}
+
 .footer-social li {
   list-style: none;
 }
@@ -294,15 +416,44 @@ a {
 
 
 .search-filter {
+    display: flex;
+    align-content: space-around;
+    width: 1200px;
+    min-height: 219px;
     color: #ffffff;
     text-align: left;
     background-color: #3a5668;
     background-image: url("../img/Background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+    outline: 2px solid orange;
 }
 
-.search-filter li {
+.search-filter-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 73px;
+    margin-right: 73px;
+
+}
+
+.search-filter-container-item {
+    width: 241px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 2px solid red;
+}
+
+.search-filter-container-item:last-child {
+    width: 328px;
+    margin-left: 247px;
+}
+
+.filter-option {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -334,22 +485,40 @@ a {
 }
 
 .search-line {
+    display: flex;
+    width: 1200px;
+    min-height: 87px;
     font-size: 12px;
     line-height: 18px;
     color: #000000;
+    outline: 2px solid red;
+}
+
+.search-line-container {
+    display: flex;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 
 .search-line li {
     list-style: none;
 }
 
-.search-line p {
+.search-line-container p {
+    width: 145px;
+    min-height: 24px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
 
 }
 
+.search-line-list {
+    min-width: 367px;
+    min-height: 15px;
+    outline: 2px solid orange;
+}
+}
 .search-line-list a:link {
     color: rgba(0, 0, 0, 0.3);
     border-bottom: 1px dotted #81b3d2;
@@ -376,6 +545,54 @@ a {
 }
 .search-line-list a:active {
     color: #000000;
+}
+
+.hotel-list {
+    display: flex;
+    outline: 2px solid orange;
+}
+
+.hotel-list-item {
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    min-height: 153px;
+    margin-left: 73px;
+    margin-right: 73px;
+    outline: 2px solid blue;
+}
+
+.hotel-list-info {
+    width: 314px;
+    min-height: 148px;
+
+    margin-left: 32px;
+    outline: 2px solid red;
+}
+
+.hotel-list-info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.button-link-list {
+    display: flex;
+}
+
+
+.hotel-list-reiting {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    list-style: none;
+}
+
+.scroll-button {
+    display: flex;
+    width: 45px;
+    min-height: 15px;
+    outline: 2px solid red;
 }
 
 .middle-list {
@@ -444,5 +661,12 @@ a {
     font-weight: normal;
     color: #666666;
     background-color: #f2f2f2;
+}
+
+.main-footer-catalog {
+    width: 1200px;
+    min-height: 122px;
+    margin-left: 40px;
+    outline: 2px solid red;
 }
 

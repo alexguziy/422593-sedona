@@ -76,7 +76,7 @@ a {
 }
 
 .banner-welcome {
-    margin-top: 46px;
+    margin-top: 78px;
     margin-left: 375px;
 }
 
@@ -86,7 +86,7 @@ a {
 	line-height: 21px;
 }
 
-.title-main {
+.main-title {
 	font-size: 21px;
     line-height: 26px;
 
@@ -124,9 +124,10 @@ input[type="text"] {
 .main-footer,
 .search-filter,
 .search-filter ul,
+.range-count,
 .search-line,
 .search-line ul,
-.hotel-list {
+.hotel-list-item {
 	display: flex;
 }
 
@@ -147,9 +148,51 @@ input[type="text"] {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+    padding: 15px 0;
 }
 
+.main-navigation li:first-child {
+    margin-left: 73px;
+    margin-right: 148px;
+}
 
+.main-navigation li:last-child {
+    margin-left: 148px;
+    margin-right: 73px;
+}
+
+.main-navigation li:nth-child(3){
+    margin-left: auto;
+
+}
+
+.main-navigation a {
+    font-weight: bold;
+}
+
+.main-navigation a:hover {
+    color: #81b3d2;
+}
+
+.main-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation .selectid  {
+    color: #766357;
+}
+
+.presentation-features h1 {
+    margin: 0px;
+    margin: 60px 300px 25px 300px;
+    text-align: center;
+}
+
+.presentation-features p {
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 53px;
+}
 
 .motive-blue {
 	background-color: #81b3d2;
@@ -157,19 +200,38 @@ input[type="text"] {
 }
 
 .motive-image {
-	height: 256px;
+    height: 256px;
 }
 
 .motive-image img {
-	width: 800px;
-	height: 256px;
+    width: 800px;
+    height: 256px;
 }
-.motive-content {
+.features-item {
+    margin-right: 10px;
+}
+
+.motive-content,
+.features-item li {
 	width: 400px;
 	text-align: center;
-
+    margin: 0;
+    margin: 30px 50px -100px 50px;
 }
 
+.motive-content h2,
+.motive-content span,
+.motive-content p {
+    color: #ffffff;
+}
+
+.features-item li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 44px 60px 20px 60px;
+
+}
 
 
 

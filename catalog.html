@@ -12,7 +12,7 @@
 
 			<header class="main-headar">
 				<nav class="main-navigation">
-            	<img class="main-logo" src="img/logo.png" alt="Логотип &quot;Седона&quot;" width="138" height="70">
+            	<a href="index.html"><img class="main-logo" src="img/logo.png" alt="Логотип &quot;Седона&quot;" width="138" height="70"></a>
                 	<ul>
                 		<li>
                 			<a href="info.html">Информация</a>
@@ -24,7 +24,7 @@
                 			<a href="map.html">Карта штата</a>
                 		</li>
                 		<li>
-                			<a href="catalog.html">Гостиницы</a>
+                			<a class="selectid" href="catalog.html">Гостиницы</a>
                 		</li>
                 	</ul>
  				</nav>
@@ -32,6 +32,7 @@
 
             <section class="search-filter">
                 <h2 class="title visuallyhidden">Поисковый фильтр</h2>
+
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <ul class="search-filter-container">
                         <li class="search-filter-container-item">
@@ -73,7 +74,8 @@
                             </fieldset>
                         </li>
 					</ul>
-          			<div class="cost-day">
+                </form>
+                <div class="cost-day">
             			<h2>Cтоимость в сутки (Р):</h2>
             			<div class="range-count">
               				<div class="range-min">
@@ -93,8 +95,7 @@
               				<div class="range-toggle range-toggle-max"></div>
             			</div>
             			<button class="btn btn-cost-day" type="submit">Показать</button>
-          			</div>
-                </form>
+          		</div>
             </section>
 
             <section class="search-line">
@@ -106,13 +107,13 @@
                         	<li class="list-item"><a href="type.html">По типу</a></li>
                         	<li class="list-item"><a href="reiting.html">По рейтингу</a></li>
                     	</ul>
+                    </div>
                     <div class="hotels-sort-rating">
 						<div class="icon-sort">
 							<a class="icon-up-dir" href="#">Пролистать наверх</a>
 							<a class="icon-down-dir icon-sort-active" href="#">Пролистать вниз</a>
 						</div>
 					</div>
-                </div>
             </section>
 
             <section class="hotel-list">

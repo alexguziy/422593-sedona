@@ -120,6 +120,7 @@ input[type="text"] {
 .motive,
 .motive ul,
 .features ul,
+.map,
 .booking-hotel,
 .main-footer,
 .search-filter,
@@ -136,6 +137,15 @@ input[type="text"] {
 .hotel-list-image,
 .main-footer {
 	flex-wrap: wrap;
+}
+
+.main-footer {
+	align-content: space-around;
+}
+
+.booking-hotel {
+	flex-direction: column;
+	align-items: center;
 }
 
 .presentation-features,
@@ -180,6 +190,18 @@ input[type="text"] {
 
 .main-navigation .selectid  {
     color: #766357;
+}
+
+.main-navigation .selectid:hover {
+	color: #604e43;
+}
+
+.main-navigation .selectid a:hover {
+	color: #604e43;
+}
+
+.main-navigation .selectid a:active {
+	color: #d6d0cc;
 }
 
 .presentation-features h1 {
@@ -233,6 +255,133 @@ input[type="text"] {
 
 }
 
+.motive-grey {
+	background-color: #eeeeee;
+}
+
+.motive-grey ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.motive-grey li {
+	padding-top: 43px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.title-booking {
+	font-size: 30px;
+	line-height: 36px;
+	padding-top: 50px;
+	padding-bottom: 27px;
+	text-align: center;
+}
+
+.booking-hotel p {
+	line-height: 24px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.btn {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+
+.btn-search-link {
+	display: block;
+	width: 568px;
+	padding: 30px 0;
+	background-color: #766357;
+}
+
+.map {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+.search-map {
+	margin: 0;
+	padding: 0;
+}
+.map-form {
+	display: flex;
+	flex-wrap: wrap;
+  	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	box-sizing: border-box;
+	width: 567px;
+	height: 396px;
+	background: #ffffff;
+	padding: 53px 50px 57px 56px;
+	transform: translateX(-50%);
+}
+
+.map-form-item lable {
+
+}
+
+.map-form-item input {
+	font: inherit;
+	background-color: aqua;
+}
+
+
+.search-button {
+	border: none;
+	background: none;
+	width: 458px;
+	height: 58px;
+	background-color: #81b3d2;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+
+
+
+.main-footer {
+	position: relative;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	margin-top: -120px;
+	padding-top: 35px;
+	padding-bottom: 37px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-informer,
+.footer-sotial,
+.copyright-logo {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 400px;
+	text-align: center;
+}
+
+.footer-informer {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+
+.footer-sotial {
+	display: flex;
+}
 
 
 

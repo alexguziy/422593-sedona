@@ -124,7 +124,7 @@ input[type="text"] {
 .booking-hotel,
 .main-footer,
 .search-filter,
-.search-filter ul,
+.search-filter-container,
 .range-count,
 .search-line,
 .search-line ul,
@@ -382,6 +382,116 @@ input[type="text"] {
 .footer-sotial {
 	display: flex;
 }
+
+.search-filter {
+    width: 1200px;
+    height: 219px;
+    background: url(../img/Background.jpg) no-repeat;
+}
+
+.search-filter ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search-filter fieldset {
+    border: none;
+}
+
+.search-filter legend,
+.cost-day h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.search-filter legend {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.search-filter label {
+    color: #ffffff;
+}
+
+.search-filter li {
+    width: 241px;
+    padding-bottom: 16px;
+}
+
+.search-filter-container:first-child {
+    margin-left: 60px;
+}
+
+.cost-day {
+    width: 328px;
+    margin-right: 60px;
+    margin-left: auto;
+}
+
+
+
+.cost-day h2 {
+    padding-top: 18px;
+}
+
+.search-line {
+    align-items: baseline;
+}
+
+.search-line ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search-line h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 66px;
+    margin-right: 58px;
+}
+
+.search-line a {
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #81b3d2;
+
+}
+.search-line-list li:nth-child(1) {
+    margin-right: 40px;
+}
+
+.search-line-list li:nth-child(2) {
+    margin-right: 36px;
+}
+
+.search-line-list li:nth-child(3) {
+    margin-right: 36px;
+}
+
+.hotels-sort-rating {
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.search-line a:hover {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+
+}
+
+.search-line a:active {
+    color: #000000;
+
+}
+
+
+
+
 
 
 

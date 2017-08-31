@@ -490,6 +490,22 @@ input[type="text"] {
 }
 
 
+.hotel-list-image {
+    align-items: center;
+    min-height: 151px;
+    margin-left: 60px;
+}
+
+
+.hotel-list-info {
+    min-width: 367px;
+    margin-left: 33px;
+}
+
+.hotel-raiting {
+    margin-right: 60px;
+    margin-left: auto;
+}
 
 
 
